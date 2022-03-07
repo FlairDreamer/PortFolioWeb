@@ -18,7 +18,7 @@ class Persona {
         return (añoActual - this.añoNac);
     }
 }
-let FD = new Persona("Flair", "Dreamer", "1994");
+let FD = new Persona("Flair", "Dreamer", 1994);
 console.log(FD.edad(2022));
 function OtroDecoradorPersona(data) {
     return function (constructor) {
@@ -44,5 +44,5 @@ let OtraPersona = class OtraPersona {
 OtraPersona = __decorate([
     OtroDecoradorPersona("Cosme,Fulanito")
 ], OtraPersona);
-let persona = new OtraPersona("Otro,Nombre");
+let persona = new OtraPersona("Otro", "Nombre");
 console.log(persona.nombre + " " + persona.apellido);

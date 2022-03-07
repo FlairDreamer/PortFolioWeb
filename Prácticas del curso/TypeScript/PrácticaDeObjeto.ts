@@ -18,7 +18,7 @@ class Persona{
 
 }
 
-let FD = new Persona("Flair", "Dreamer", "1994");
+let FD = new Persona("Flair", "Dreamer", 1994);
 
 console.log(FD.edad(2022));
 
@@ -34,9 +34,9 @@ function OtroDecoradorPersona(data:string){
 
 @OtroDecoradorPersona("Cosme,Fulanito")
 class OtraPersona{
-  private nombre:string = "";
-  private apellido:string = "";
-  private añoNac:number = 0;
+  public nombre:string = "";
+  public apellido:string = "";
+  public añoNac:number = 0;
 
   constructor(nombre:string, apellido:string){
     this.nombre = nombre;
@@ -44,5 +44,5 @@ class OtraPersona{
   }
 }
 
-let persona = new OtraPersona("Otro,Nombre");
+let persona = new OtraPersona("Otro", "Nombre");
 console.log(persona.nombre + " " + persona.apellido);
