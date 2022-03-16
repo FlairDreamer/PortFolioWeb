@@ -11,8 +11,8 @@ html, body {
 }
 
 .rectangle-header {
-  height: 100px;
-  border-bottom: 4px solid #FFFFFF; /* Sin el borde no se muestra el color de fondo. */
+  max-height: 100px;
+  border-bottom: 4px solid #FFFFFF;
   background-color: #00358E;
 }
 
