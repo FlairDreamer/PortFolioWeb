@@ -31,32 +31,34 @@
             <a href="https://www.linkedin.com/in/flairdreamer/" target="_blank" class="btn btn-social text-white btn-linkedin"><span class="fa fa-linkedin"></span>LinkedIn</a>
           </div>
           <div class="align-self-center">
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ingresar</button>
+            <button class="btn login-top" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ingresar</button>
 
             <div id="id01" class="modal">
 
               <form class="modal-content animate" action="/action_page.php" method="post">
                 <div class="imgcontainer">
                   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                  <img src="Imágenes/HombreBarbijo.png" alt="PixelAvatar" class="avatar">
                 </div>
 
                 <div class="container">
-                  <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-
-                  <button type="submit">Ingresar</button>
+                  <div class="form-floating mb-2 mt-2">
+                    <input type="text" class="form-control" id="email" placeholder="Ingresa el email" name="email" required>
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="form-floating mt-2 mb-2">
+                    <input type="password" class="form-control" id="pwd" placeholder="Ingresa la contraseña" name="pwd" required>
+                    <label for="pwd">Contraseña</label>
+                  </div>
+                  <button class="btn login" type="submit">Ingresar</button>
                   <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    <input type="checkbox" checked="checked" name="remember"> Recordar
                   </label>
                 </div>
 
-                <div class="container" style="background-color:#f1f1f1">
+                <div class="container" style="border-top: 4px solid #FFFFFF; background-color: #C4C4C4">
                   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                  <span class="psw">Forgot <a href="#">password?</a></span>
+                  <span class="pwd"><a href="#">¿Olvidó su contraseña?</a></span>
                 </div>
               </form>
             </div>
@@ -73,7 +75,23 @@
                 }
             </script>
           </div>
+
         </div>
+        <div style="border-bottom: 4px solid #FFFFFF"> <!-- Cartel. -->
+          <img class="img-fluid" src="Imágenes/recorteRin2.png" alt="Cartel"></a>
+        </div>
+        <div style="border-bottom: 4px solid #FFFFFF">
+          <nav class="nav nav-pills nav-fill">
+            <a class="nav-link active" aria-current="page" href="#">Índice</a>
+            <a class="nav-link" href="#">Experiencia</a>
+            <a class="nav-link" href="#">Educación</a>
+            <a class="nav-link" href="#">Habilidades blandas y duras</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Proyectos</a>
+          </nav>
+        </div>
+      </div>
+      <div>
+
       </div>
     </div>
 
