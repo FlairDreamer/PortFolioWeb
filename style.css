@@ -1,15 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 html, body {
+  position: relative;
   height: 100%;
   width: 100%;
   background: #4E4D4D;
   font-family: "Roboto", "Tahoma", "Verdana", sans-serif;
-}
-
-.marco {
-  height: 100%;
-  border: 4px solid #FFFFFF;
 }
 
 .d-flex {
@@ -250,4 +246,8 @@ a:hover {
 }
 a:active {
   color: #8e8e8e;
+}
+
+a.blanco {
+  color: #FFFFFF;
 }
