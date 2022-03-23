@@ -251,3 +251,18 @@ a:active {
 a.blanco {
   color: #FFFFFF;
 }
+
+div.border-lrb {
+  border-left: 4px solid #FFFFFF;
+  border-right: 4px solid #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
+}
+
+.bg-lgray {
+  background: #C4C4C4;
+}
+
+div.cuadro-texto {
+  color: #00358E;
+  text-align: center;
+}

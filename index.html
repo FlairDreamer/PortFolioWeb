@@ -17,79 +17,98 @@
   </head>
 
   <body>
-    <div class="container-fluid g-0"> <!-- Más adelante tendría que agregar el marco blanco. -->
-      <div class="d-flex justify-content-around" style="border: 4px solid #FFFFFF"> <!-- Encabezado azul. -->
-        <div class="text-white align-self-center">
-          <img class="img-fluid" src="Imágenes/ApLogo-20-20.png" style="max-height: 80px;">
-        </div>
-        <div class="text-white align-self-center">
-          <h5>#YoProgamo</h5>
-        </div>
-        <div class="align-self-center">
-          <a href="https://www.linkedin.com/in/flairdreamer/" target="_blank" class="btn btn-social text-white btn-linkedin"><span class="fa fa-linkedin"></span>LinkedIn</a>
-        </div>
-        <div class="align-self-center">
-          <button class="btn login-top" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ingresar</button>
-
-          <div id="id01" class="modal">
-
-            <form class="modal-content animate" action="/action_page.php" method="post">
-              <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="Imágenes/HombreBarbijo.png" alt="PixelAvatar" class="avatar">
-              </div>
-
-              <div class="container">
-                <div class="form-floating mb-2 mt-2">
-                  <input type="text" class="form-control" id="email" placeholder="Ingresa el email" name="email" required>
-                  <label for="email">Email</label>
-                </div>
-                <div class="form-floating mt-2 mb-2">
-                  <input type="password" class="form-control" id="pwd" placeholder="Ingresa la contraseña" name="pwd" required>
-                  <label for="pwd">Contraseña</label>
-                </div>
-                <button class="btn login" type="submit">Ingresar</button>
-                <label>
-                  <input type="checkbox" checked="checked" name="remember"> Recordar
-                </label>
-              </div>
-
-              <div class="container" style="background-color: #C4C4C4">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="pwd"><a href="#">¿Olvidó su contraseña?</a></span>
-              </div>
-            </form>
-          </div>
-
-          <script>
-          // Get the modal
-          var modal = document.getElementById('id01');
-
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-              if (event.target == modal) {
-                  modal.style.display = "none";
-                }
-              }
-          </script>
-        </div>
-
+    <div class="d-flex justify-content-around" style="border: 4px solid #FFFFFF"> <!-- Encabezado azul. -->
+      <div class="align-self-center">
+        <img class="img-fluid" src="Imágenes/ApLogo-20-20.png" style="max-height: 80px;">
       </div>
-      <div style="border-left: 4px solid #FFFFFF; border-right: 4px solid #FFFFFF"> <!-- Cartel. -->
-          <img class="img-fluid" src="Imágenes/recorteRin2.png" alt="Cartel"></a>
+      <div class="text-white align-self-center">
+        <h5>#YoProgamo</h5>
+      </div>
+      <div class="align-self-center">
+        <a href="https://www.linkedin.com/in/flairdreamer/" target="_blank" class="btn btn-social text-white btn-linkedin"><span class="fa fa-linkedin"></span>LinkedIn</a>
+      </div>
+      <div class="align-self-center">
+        <button class="btn login-top" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ingresar</button>
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="Imágenes/HombreBarbijo.png" alt="PixelAvatar" class="avatar">
+            </div>
+
+            <div class="container">
+              <div class="form-floating mb-2 mt-2">
+                <input type="text" class="form-control" id="email" placeholder="Ingresa el email" name="email" required>
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating mt-2 mb-2">
+                <input type="password" class="form-control" id="pwd" placeholder="Ingresa la contraseña" name="pwd" required>
+                <label for="pwd">Contraseña</label>
+              </div>
+              <button class="btn login" type="submit">Ingresar</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Recordar
+              </label>
+            </div>
+
+            <div class="container" style="background-color: #C4C4C4">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="pwd"><a href="#">¿Olvidó su contraseña?</a></span>
+            </div>
+          </form>
         </div>
-      <div> <!-- Barra de navegación. -->
-          <nav class="nav nav-pills nav-fill flex-column flex-md-row bg-white" style="border: 4px solid #FFFFFF">
-            <a class="flex-md-fill text-md-center nav-link active blanco" aria-current="page" href="index.html" style="background: #448AFF">Índice</a>
-            <a class="flex-md-fill text-md-center nav-link blanco" href="#" style="background: #00358E">Experiencia</a>
-            <a class="flex-md-fill text-md-center nav-link blanco" href="#" style="background: #00358E">Educación</a>
-            <a class="flex-md-fill text-md-center nav-link blanco" href="#" style="background: #00358E">Habilidades blandas y duras</a>
-            <a class="nav-link blanco" href="#" style="background: #00358E">Proyectos</a>
-          </nav>
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+      </div>
+
+    </div>
+    <div style="border-left: 4px solid #FFFFFF; border-right: 4px solid #FFFFFF"> <!-- Cartel. -->
+      <img class="img-fluid" src="Imágenes/recorteRin2.png" alt="Cartel"></a>
+    </div>
+    <div> <!-- Barra de navegación. -->
+      <nav class="nav nav-pills nav-fill flex-column flex-md-row bg-white" style="border: 4px solid #FFFFFF">
+        <a class="flex-md-fill text-md-center nav-link active blanco" aria-current="page" href="index.html" style="background: #448AFF">Índice</a>
+        <a class="flex-md-fill text-md-center nav-link blanco" href="Páginas/Experiencia.html" style="background: #00358E">Experiencia</a>
+        <a class="flex-md-fill text-md-center nav-link blanco" href="#" style="background: #00358E">Educación</a>
+        <a class="flex-md-fill text-md-center nav-link blanco" href="#" style="background: #00358E">Habilidades blandas y duras</a>
+        <a class="flex-md-fill text-md-center nav-link blanco" href="#" style="background: #00358E">Proyectos</a>
+      </nav>
+    </div>
+    <div class="container-fluid border-lrb bg-lgray"> <!-- Acerca de mí... -->
+      <div class="row">
+        <div class="col-auto g-0" style="border-right: 4px solid #FFFFFF">
+          <img class="img-fluid" src="Imágenes/ChicaPerfil.jpg" alt="Foto de perfil" style="max-height: 250px">
         </div>
-      <div> <!-- Acerca de mí... -->
-        <div>
-          <img class="img-fluid" src="https://i.pinimg.com/736x/0e/cb/4f/0ecb4f9be0d352c89cfd9ab2fb54e7b1.jpg" alt="Foto de perfil" style="max-height: 250px; border-right: 4px solid #FFFFFF; border-bottom: 4px solid #FFFFFF">
+        <div class="col">
+          <div class="col cuadro-texto">
+            <h1 style="padding-bottom: 15px">Acerca de mí.</h1>
+            <h5>
+              Me llamo Santiago Sidotti y tengo 28 años.
+              <br>
+              Actualmente soy Desarrollador Full Stack Junior.
+              <br>
+              <br>
+              Me gusta escuchar música, con preferencia en Rock y Metal.
+              <br>
+              Me gusta ver series y películas, con preferencia en <abbr title="Dibujos Japoneses">anime</abbr>.
+              <br>
+              Me gusta leer de todo en general, con preferencia en horror cósmico, cual H. P. Lovecraft.
+              <br>
+              Me gustan los videojuegos en general, con preferencia en mundos abiertos y <abbr title="Juego de Rol">RPG</abbr>.
+            </h5>
+          </div>
         </div>
       </div>
     </div>
