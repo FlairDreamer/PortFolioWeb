@@ -266,3 +266,7 @@ div.cuadro-texto {
   color: #00358E;
   text-align: center;
 }
+
+a.active {
+  background-color: #448AFF;
+}
