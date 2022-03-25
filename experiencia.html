@@ -19,7 +19,7 @@
   <body>
     <div class="d-flex justify-content-around" style="border: 4px solid #FFFFFF"> <!-- Encabezado azul. -->
       <div class="align-self-center">
-        <img class="img-fluid" src="Imágenes/ApLogo-20-20.png" style="max-height: 80px;">
+        <img class="img-fluid" src="Imágenes/ApLogo-20-20.png" style="max-height: 100px;">
       </div>
       <div class="text-white align-self-center">
         <h5>#YoProgamo</h5>
@@ -55,7 +55,7 @@
 
             <div class="container" style="background-color: #C4C4C4">
               <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-              <span class="pwd"><a href="#">¿Olvidó su contraseña?</a></span>
+              <span class="pwd"><a class="login" href="#">¿Olvidó su contraseña?</a></span>
             </div>
           </form>
         </div>
@@ -81,28 +81,26 @@
       <nav class="nav nav-pills nav-fill flex-column flex-md-row bg-white" style="border: 4px solid #FFFFFF">
         <a class="flex-md-fill text-md-center nav-link blanco" href="index.html" style="background: #00358E">Índice</a>
         <a class="flex-md-fill text-md-center nav-link blanco" aria-current="page" href="experiencia.html" style="background: #448AFF">Experiencia</a>
-        <a class="flex-md-fill text-md-center nav-link blanco" href="#" style="background: #00358E">Educación</a>
+        <a class="flex-md-fill text-md-center nav-link blanco" href="educación.html" style="background: #00358E">Educación</a>
         <a class="flex-md-fill text-md-center nav-link blanco" href="#" style="background: #00358E">Habilidades blandas y duras</a>
         <a class="flex-md-fill text-md-center nav-link blanco" href="#" style="background: #00358E">Proyectos</a>
       </nav>
     </div>
-    <div class="container-fluid border-lrb bg-lgray"> <!-- Experiencia -->
-      <div class="row align-items-center">
-        <div class="col-auto g-0" style="border-right: 4px solid #FFFFFF">
-          <img class="img-fluid" src="Imágenes/School.jpg" alt="Foto de instituto" style="max-height: 250px">
+    <div class="container-fluid border-lrb bg-general"> <!-- Experiencia -->
+      <div class="row">
+        <div class="col-md-4 g-0 align-self-center border-box-photo">
+          <img class="img-fluid" src="Imágenes/InitialD.jpg" alt="Foto de experiencia">
         </div>
-        <div class="col">
+        <div class="col border-box-text">
           <div class="col cuadro-texto">
-            <h1 style="padding-bottom: 15px">Experiencia.</h1>
-            <h5>
-              No tengo experiencia todavía.<br>
+            <h1>
+              No tengo experiencia todavía.
+              <br>
               Tal vez usted pueda ayudarme a crecer.
-            </h5>
+            </h1>
           </div>
         </div>
       </div>
-    </div>
-    <div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
