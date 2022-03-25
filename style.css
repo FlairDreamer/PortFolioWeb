@@ -235,16 +235,16 @@ span.pwd {
   }
 }
 
-a:link {
+a.login:link {
   color: #929292;
 }
-a:visited {
+a.login:visited {
   color: #575757;
 }
-a:hover {
+a.login:hover {
   color: #2b2b2b;
 }
-a:active {
+a.login:active {
   color: #8e8e8e;
 }
 
@@ -258,7 +258,7 @@ div.border-lrb {
   border-bottom: 4px solid #FFFFFF;
 }
 
-.bg-lgray {
+.bg-general {
   background: #C4C4C4;
 }
 
@@ -269,4 +269,34 @@ div.cuadro-texto {
 
 a.active {
   background-color: #448AFF;
+}
+
+h1 {
+  padding: 6px;
+}
+
+h3 {
+  padding: 4px;
+}
+
+h5 {
+  padding: 2px;
+}
+
+.border-box-photo {
+  border-top: 4px solid #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
+}
+
+.border-box-text {
+  border-left: 4px solid #FFFFFF;
+}
+
+@media only screen and (max-width: 767px) {
+  .border-box-photo {
+    border-top: 0px;
+  }
+  .border-box-text {
+    border-left: 0px;
+  }
 }
