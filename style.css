@@ -310,3 +310,228 @@ h5 {
   justify-content: center;
   align-content: center;
 }
+
+/* Forma circular */
+
+.progress {
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    position: relative;
+}
+.progress:after {
+    content: "";
+    border-radius: 50%;
+    border: 32px solid #00358E;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.progress > span {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.progress .progress-left {
+    left: 0;
+}
+.progress .progress-bar {
+    border-width: 32px;
+    border-style: solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    top: 0;
+    border-color: #078704;
+}
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right {
+    right: 0;
+}
+.progress .progress-right .progress-bar {
+    left: -100%;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+}
+.progress .progress-value {
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Animacion */
+
+@keyframes loading-html {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(72deg);
+    }
+}
+@keyframes loading-css-bootstrap {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-js-ts {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+}
+@keyframes loading-gestion-tiempo {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+@keyframes loading-paciencia1 {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-paciencia2 {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-español1 {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-español2 {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-inglés {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-francés {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+}
+@keyframes loading-alemán {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+}
+
+.progress.html .progress-right .progress-bar {
+    animation: loading-html 3.0s linear forwards;
+}
+
+.progress.css-bootstrap .progress-right .progress-bar{
+    animation: loading-css-bootstrap 3.0s linear forwards;
+}
+
+.progress.js-ts .progress-right .progress-bar {
+    animation: loading-js-ts 3.0s linear forwards;
+}
+
+.progress.gestion-tiempo .progress-right .progress-bar {
+    animation: loading-gestion-tiempo 3.0s linear forwards;
+}
+
+.progress.paciencia .progress-right .progress-bar {
+    animation: loading-paciencia1 1.7s linear forwards;
+}
+
+.progress.paciencia .progress-left .progress-bar {
+    animation: loading-paciencia2 1.3s linear forwards 1.7s;
+}
+
+.progress.español .progress-right .progress-bar {
+    animation: loading-español1 1.5s linear forwards;
+}
+
+.progress.español .progress-left .progress-bar {
+    animation: loading-español2 1.5s linear forwards 1.5s;
+}
+
+.progress.inglés .progress-right .progress-bar {
+    animation: loading-inglés 3.0s linear forwards;
+}
+
+.progress.francés .progress-right .progress-bar {
+    animation: loading-francés 3.0s linear forwards;
+}
+
+.progress.alemán .progress-right .progress-bar {
+    animation: loading-alemán 3.0s linear forwards;
+}
