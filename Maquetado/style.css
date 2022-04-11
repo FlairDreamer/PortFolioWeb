@@ -294,22 +294,22 @@ h5 {
 }
 
 .separacion {
-  max-width: 0px;
+  max-width: 0;
   border-right: 4px solid #FFFFFF;
 }
 
 @media only screen and (max-width: 767px) {
   .separacion {
     max-width: 100%;
-    max-height: 0px;
+    max-height: 0;
     border-right: 0;
     border-bottom: 4px solid #FFFFFF;
   }
 }
 
 .perfect-center {
-  justify-content: center;
   align-content: center;
+  justify-content: center;
 }
 
 /* Forma circular */
