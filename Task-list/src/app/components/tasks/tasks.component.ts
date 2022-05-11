@@ -17,7 +17,6 @@ export class TasksComponent implements OnInit {
 
   ngOnInit(): void {
     // Like Promise.
-    // TODO: Posible error. Minuto 58.
     this.taskService.getTasks().subscribe((tasks)=>{
       this.tasks = tasks
     });

@@ -1,1 +1,578 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css"; /* Importar desde acá arregla los errores de hacerlo en angular.json. */
+
+/* @import '../node_modules/bootstrap-icons/font/bootstrap-icons';  TODO: Fijarme si realmente lo estoy usando. */
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #4e4d4d;
+  font-family: 'Roboto', sans-serif;
+}
+
+.d-flex.header {
+  max-height: 100px;
+  border-bottom: 4px solid #fff;
+  background-color: #00358e;
+}
+
+.d-flex.prueba {
+  height: 100%;
+}
+
+/* Botón de LinkedIn */
+
+.btn.btn-social {
+  border: 0;
+  position: relative;
+  padding-left: 44px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px;
+}
+
+.btn.btn-social :first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  line-height: 43px;
+  font-size: 1.6em;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn-social-icon {
+  position: relative;
+  padding-left: 44px;
+  padding-left: 0;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 34px;
+  width: 34px;
+  padding-right: 0;
+  margin-bottom: 4px;
+}
+
+.btn.btn-social-icon :first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  width: 100% !important;
+  line-height: 34px;
+  font-size: 1.6em;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.btn.btn-linkedin {
+  color: #fff;
+  background-color: #1087dd;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:focus,
+.btn-linkedin:active,
+.btn-linkedin.active,
+.open .dropdown-toggle.btn-linkedin {
+  color: #fff;
+  background-color: #002563;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-linkedin:active,
+.btn-linkedin.active,
+.open .dropdown-toggle.btn-linkedin {
+  background-image: none;
+}
+
+.btn-linkedin.disabled,
+.btn-linkedin[disabled],
+fieldset[disabled] .btn-linkedin,
+.btn-linkedin.disabled:hover,
+.btn-linkedin[disabled]:hover,
+fieldset[disabled] .btn-linkedin:hover,
+.btn-linkedin.disabled:focus,
+.btn-linkedin[disabled]:focus,
+fieldset[disabled] .btn-linkedin:focus,
+.btn-linkedin.disabled:active,
+.btn-linkedin[disabled]:active,
+fieldset[disabled] .btn-linkedin:active,
+.btn-linkedin.disabled.active,
+.btn-linkedin[disabled].active,
+fieldset[disabled] .btn-linkedin.active {
+  background-color: #205081;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de login */
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button.login {
+  background-color: #078704;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button.login-top {
+  background-color: #078704;
+  color: white;
+  padding: 6px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #ff2f2f;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.pwd {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #4e4d4d;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 4px solid #fff;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #ff2f2f;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from { -webkit-transform: scale(0); }
+  to { -webkit-transform: scale(1); }
+}
+
+@keyframes animatezoom {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.pwd {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+a.login:link {
+  color: #929292;
+}
+
+a.login:visited {
+  color: #575757;
+}
+
+a.login:hover {
+  color: #2b2b2b;
+}
+
+a.login:active {
+  color: #8e8e8e;
+}
+
+a.blanco {
+  color: #fff;
+}
+
+div.border-lr {
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+
+.bg-general {
+  background: #c4c4c4;
+}
+
+div.cuadro-texto {
+  color: #00358e;
+  text-align: center;
+}
+
+a.active {
+  background-color: #448aff;
+}
+
+h1 {
+  padding: 6px;
+}
+
+h3 {
+  padding: 4px;
+}
+
+h5 {
+  padding: 2px;
+}
+
+.flex-md-fill.separacion-nav {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-bottom: 4px solid #fff;
+}
+
+.separacion {
+  max-width: 0;
+  border-right: 4px solid #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .separacion {
+    max-width: 100%;
+    max-height: 0;
+    border-right: 0;
+    border-bottom: 4px solid #fff;
+  }
+}
+
+.perfect-center {
+  align-content: center;
+  justify-content: center;
+}
+
+/* Forma circular */
+
+.progress {
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  border-radius: 50%;
+  border: 32px solid #00358e;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  border-width: 32px;
+  border-style: solid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: none;
+  top: 0;
+  border-color: #078704;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+}
+
+.progress .progress-value {
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* Animacion */
+
+@keyframes loading-html {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(36deg);
+    transform: rotate(72deg);
+  }
+}
+
+@keyframes loading-css-bootstrap {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes loading-js-ts {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+}
+
+@keyframes loading-gestion-tiempo {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+  }
+}
+
+@keyframes loading-paciencia1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-paciencia2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+
+@keyframes loading-español1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-español2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-inglés {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+
+@keyframes loading-francés {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+}
+
+@keyframes loading-alemán {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+}
+
+.progress.html .progress-right .progress-bar {
+  animation: loading-html 3s linear forwards;
+}
+
+.progress.css-bootstrap .progress-right .progress-bar {
+  animation: loading-css-bootstrap 3s linear forwards;
+}
+
+.progress.js-ts .progress-right .progress-bar {
+  animation: loading-js-ts 3s linear forwards;
+}
+
+.progress.gestion-tiempo .progress-right .progress-bar {
+  animation: loading-gestion-tiempo 3s linear forwards;
+}
+
+.progress.paciencia .progress-right .progress-bar {
+  animation: loading-paciencia1 1.7s linear forwards;
+}
+
+.progress.paciencia .progress-left .progress-bar {
+  animation: loading-paciencia2 1.3s linear forwards 1.7s;
+}
+
+.progress.español .progress-right .progress-bar {
+  animation: loading-español1 1.5s linear forwards;
+}
+
+.progress.español .progress-left .progress-bar {
+  animation: loading-español2 1.5s linear forwards 1.5s;
+}
+
+.progress.inglés .progress-right .progress-bar {
+  animation: loading-inglés 3s linear forwards;
+}
+
+.progress.francés .progress-right .progress-bar {
+  animation: loading-francés 3s linear forwards;
+}
+
+.progress.alemán .progress-right .progress-bar {
+  animation: loading-alemán 3s linear forwards;
+}
