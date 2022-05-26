@@ -1,0 +1,26 @@
+<div class="container-fluid border-lr bg-general"> <!-- Acerca de mí... -->
+  <div class="row" style="border-bottom: 4px solid #FFFFFF">
+    <div class="col-md-3 g-0 align-self-center">
+      <img class="img-fluid" [src]="acercaDeMi?.fotoPerfil" alt="Foto de perfil">
+    </div>
+    <div class="separacion g-0">
+    </div>
+    <div class="col align-self-center">
+      <div class="col cuadro-texto">
+        <h1>Me llamo {{acercaDeMi?.nombre}}.</h1>
+        <h3>Soy {{acercaDeMi?.titulo}}.</h3>
+        <h5>
+          Tengo {{acercaDeMi?.edad}} años.
+          <br>
+          Me gusta escuchar música, con preferencia en {{acercaDeMi?.preferenciaMusica}}.
+          <br>
+          Me gusta ver series y películas, con preferencia en <abbr title="Dibujos Japoneses">{{acercaDeMi?.preferenciaSeriesYPeliculas}}</abbr>.
+          <br>
+          Me gusta leer de todo en general. Autor más leído: <a href="https://es.wikipedia.org/wiki/H._P._Lovecraft">{{acercaDeMi?.autorMasLeido}}</a>.
+          <br>
+          Me gustan los videojuegos en general, con preferencia en {{acercaDeMi?.videojuegos.uno}} y <abbr title="Juego de Rol">{{acercaDeMi?.videojuegos.dos}}</abbr>.
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>

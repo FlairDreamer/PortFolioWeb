@@ -1,0 +1,137 @@
+{
+  "portfolio": {
+    "encabezado": {
+      "apLogo": {
+        "foto": "/assets/Imágenes/ApLogo-20-20.png",
+        "YP": "#YoProgramo"
+      },
+      "redSocial": {
+        "link": "https://www.linkedin.com/in/flairdreamer/",
+        "nombre": "LinkedIn"
+      },
+      "fotoAvatarLogin": "/assets/Imágenes/HombreBarbijo.png",
+      "fotoCartel": "/assets/Imágenes/recorteRin2.png"
+    },
+    "barraNavegacion": {
+      "indice": "index.html",
+      "experiencia": "experiencia.html",
+      "educacion": "educación.html",
+      "habilidades": "habilidades-blandas-y-duras.html",
+      "proyectos": "proyectos.html"
+    },
+    "acercaDeMi": {
+      "fotoPerfil": "/assets/Imágenes/ChicaPerfil.jpg",
+      "nombre": "Santiago Sidotti",
+      "titulo": "Desarrollador Full Stack Junior",
+      "edad": "28",
+      "musica": "Rock y Metal",
+      "seriesYPeliculas": "anime",
+      "autorMasLeido": "H. P. Lovecraft",
+      "videojuegos": {
+        "uno": "Mundos Abiertos",
+        "dos": "RPG"
+      }
+    },
+    "experiencia": {
+      "img": "/assets/Imágenes/InitialD.jpg",
+      "p1": "No tengo experiencia todavía.",
+      "p2": "Tal vez usted pueda ayudarme a crecer."
+    },
+    "educacion": [
+      {
+        "img": "/assets/Imágenes/ApLogo-20-20.png",
+        "titulo": "Desarrollador Full Stack Junior",
+        "entidad": {
+          "p1": "Argentina Programa",
+          "p2": "Segunda Etapa: #YoProgramo"
+        },
+        "periodo": {
+          "inicio": "01/02/2022",
+          "final": "31/08/2022"
+        }
+      },
+      {
+        "img": "/assets/Imágenes/ApLogo-20-20.png",
+        "titulo": "Fundamentos de Programación",
+        "entidad": {
+          "p1": "Argentina Programa",
+          "p2": "Primera Etapa: #SéProgramar"
+        },
+        "periodo": {
+          "inicio": "25/10/2021",
+          "final": "17/12/2021"
+        }
+      }
+    ],
+    "escuela": {
+      "img": "/assets/Imágenes/EscudoEscuela.png",
+      "titulo": "Escolaridad completa",
+      "entidad": {
+        "p1": "Primaria",
+        "p2": "Secundaria"
+      },
+      "periodo": {
+        "inicio": "??/??/????",
+        "final": "??/??/2012"
+      }
+    },
+    "habilidadesDuras": [
+      {
+        "clase": "progress html",
+        "nivel": 20,
+        "habilidad": "HTML"
+      },
+      {
+        "clase": "progress css-bootstrap",
+        "nivel": 25,
+        "habilidad": "CSS-Bootstrap"
+      },
+      {
+        "clase": "progress js-ts",
+        "nivel": 5,
+        "habilidad": "TypeScript-JavaScript"
+      }
+    ],
+    "habilidadesBlandas": [
+      {
+        "clase": "progress gestion-tiempo",
+        "nivel": 35,
+        "habilidad": "Gestion del tiempo"
+      },
+      {
+        "clase": "progress paciencia",
+        "nivel": 90,
+        "habilidad": "Paciencia"
+      }
+    ],
+    "idiomas": [
+      {
+        "clase": "progress español",
+        "nivel": 100,
+        "habilidad": "Español Nativo"
+      },
+      {
+        "clase": "progress inglés",
+        "nivel": 40,
+        "habilidad": "Inglés-Intermedio/B2"
+      },
+      {
+        "clase": "progress francés",
+        "nivel": 5,
+        "habilidad": "Francés-Aprendiendo"
+      },
+      {
+        "clase": "progress alemán",
+        "nivel": 5,
+        "habilidad": "Alemán-Aprendiendo"
+      }
+    ],
+    "proyectos": {
+      "img": "/assets/Imágenes/ProyectoPortfolio.png",
+      "titulo": "Portafolio Web",
+      "inicio": "08/02/2022",
+      "fin": "Actualidad",
+      "descripcion": "Primer proyecto realizado. Se trata de mi portfolio el cual cumple con dos propósitos: Que me evalúen en el curso de ArgentinaPrograma y que me sirva como una especie de CV para buscar empleo."
+    }
+  }
+}

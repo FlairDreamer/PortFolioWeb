@@ -1,0 +1,43 @@
+<button class="btn login-top" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Ingresar</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"><i class="fa-solid fa-xmark"></i></span>
+      <img [src]="login?.fotoAvatarLogin" alt="PixelAvatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <div class="form-floating mb-2 mt-2">
+        <input type="text" class="form-control" id="email" placeholder="Ingresa el email" name="email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="form-floating mt-2 mb-2">
+        <input type="password" class="form-control" id="pwd" placeholder="Ingresa la contraseña" name="pwd" required>
+        <label for="pwd">Contraseña</label>
+      </div>
+      <button class="btn login" type="submit">Ingresar</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recordar
+      </label>
+    </div>
+
+    <div class="container" style="background-color: #c4c4c4">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="pwd"><a class="login" href="#">¿Olvidó su contraseña?</a></span> <!-- TODO: Crear página para editar. -->
+    </div>
+  </form>
+</div>
+
+<script> // TODO: Arreglar el modal. Quizás cambiarlo por una versión en typescript.
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>

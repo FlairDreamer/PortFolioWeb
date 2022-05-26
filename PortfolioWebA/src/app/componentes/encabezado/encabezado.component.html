@@ -1,0 +1,19 @@
+<div class="d-flex header justify-content-around" style="border: 4px solid #fff"> <!-- Encabezado azul. -->
+  <!-- TODO: La solución al error fue agregar un '?'. Aparentemente el error ocurre porque el template intenta mostrar los valores antes de obtener los datos. Preguntar en StackOverflow si no hay una mejor forma que simplemente llenar todo de '?'.-->
+  <!-- TODO: Hacer responsivo el encabezado. -->
+  <div class="align-self-center">
+    <img class="img-fluid" [src]="encabezado?.apLogo.foto" style="max-height: 100px;">
+  </div>
+  <div class="text-white align-self-center">
+    <h5>{{encabezado?.apLogo.YP}}</h5>
+  </div>
+  <div class="align-self-center">
+    <a [href]="encabezado?.redSocial.link" target="_blank" class="btn btn-social text-white btn-linkedin"><span class="fa-brands fa-linkedin-in"></span>{{encabezado?.redSocial.nombre}}</a>
+  </div>
+  <div class="align-self-center">
+    <app-login></app-login>
+  </div>
+</div>
+<div style="border-left: 4px solid #fff; border-right: 4px solid #fff"> <!-- Cartel. -->
+  <img class="img-fluid" [src]="encabezado?.fotoCartel" alt="Cartel">
+</div>

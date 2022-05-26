@@ -1,0 +1,47 @@
+<div class="container-fluid border-lr bg-general"> <!-- Habilidades blandas y duras. -->
+  <div class="row justify-content-md-center cuadro-texto" style="border-bottom: 4px solid #fff"> <!-- TODO: Ver la forma de optimizar esto.  -->
+    <h1>Habilidades duras</h1>
+    <div class="col" *ngFor="let habilidades of habilidadesDuras">
+      <div [class]="habilidades.clase">
+        <span class="progress-left">
+          <span class="progress-bar"></span>
+        </span>
+        <span class="progress-right">
+          <span class="progress-bar"></span>
+        </span>
+        <div class="progress-value">{{habilidades.nivel}} %</div>
+      </div>
+      <h5>{{habilidades.habilidad}}</h5>
+    </div>
+  </div>
+  <div class="row justify-content-md-center cuadro-texto" style="border-bottom: 4px solid #fff">
+    <h1>Habilidades blandas</h1>
+    <div class="col" *ngFor="let habilidades of habilidadesBlandas">
+      <div [class]="habilidades.clase">
+        <span class="progress-left">
+          <span class="progress-bar"></span>
+        </span>
+        <span class="progress-right">
+          <span class="progress-bar"></span>
+        </span>
+        <div class="progress-value">{{habilidades.nivel}} %</div>
+      </div>
+      <h5>{{habilidades.habilidad}}</h5>
+    </div>
+  </div>
+  <div class="row justify-content-md-center cuadro-texto" style="border-bottom: 4px solid #fff">
+    <h1>Idiomas</h1>
+    <div class="col" *ngFor="let habilidades of idiomas">
+      <div [class]="habilidades.clase">
+        <span class="progress-left">
+          <span class="progress-bar"></span>
+        </span>
+        <span class="progress-right">
+          <span class="progress-bar"></span>
+        </span>
+        <div class="progress-value">{{habilidades.nivel}} %</div>
+      </div>
+      <h5>{{habilidades.habilidad}}</h5>
+    </div>
+  </div>
+</div>
