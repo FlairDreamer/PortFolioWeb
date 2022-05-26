@@ -1,0 +1,49 @@
+<div class="container-fluid border-lr bg-general"> <!-- Educación -->
+  <div class="row" style="border-bottom: 4px solid #fff" *ngFor="let educacion of apList"> <!-- Repite esta parte del código según los datos del .json -->
+    <div class="col-md-3 g-0 align-self-center" style="background-color: #00358e">
+      <img class="img-fluid" [src]="educacion?.img" alt="Foto de instituto">
+    </div>
+    <div class="separacion g-0">
+    </div>
+    <div class="col align-self-center">
+      <div class="col cuadro-texto">
+        <h1>{{educacion?.titulo}}</h1>
+        <h3>
+          {{educacion?.entidad.p1}}
+          <br>
+          {{educacion?.entidad.p2}}
+        </h3>
+        <h5>
+          <strong>Período:  </strong>{{educacion?.periodo.inicio}} - {{educacion?.periodo.final}}
+        </h5>
+        <p>
+          Argentina Programa es una capacitación en programación, gratuita y virtual, impulsada por el gobierno argentino. <br> La misma se encuentra avalada por el <a href='https://www.argentina.gob.ar/produccion'>Ministerio de Desarrollo Productivo</a>, por la <a href='https://www.cessi.org.ar/'>Cámara de la Industria Argentina del Software (CESSI)</a> y por el <a href='https://www.argentina.gob.ar/inti'>Instituto Nacional de Tecnología Industrial.</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- TODO: Buscar la forma de optimizar esto. -->
+  <div class="row" style="border-bottom: 4px solid #fff">
+    <div class="col-md-3 g-0 align-self-center" style="background-color: #00358e">
+      <img class="img-fluid" [src]="educacion?.escuela?.img" alt="Foto de instituto">
+    </div>
+    <div class="separacion g-0">
+    </div>
+    <div class="col align-self-center">
+      <div class="col cuadro-texto">
+        <h1>{{educacion?.escuela?.titulo}}</h1>
+        <h3>
+          {{educacion?.escuela?.entidad.p1}}
+          <br>
+          {{educacion?.escuela?.entidad.p2}}
+        </h3>
+        <h5>
+          <strong>Período:  </strong>{{educacion?.escuela?.periodo.inicio}} - {{educacion?.escuela?.periodo.final}}
+        </h5>
+        <p>
+          La primaria la he terminado en otra ciudad, en otra escuela, y carezco de la información adecuada. <br> La secundaria la completé en la <a href="https://www.facebook.com/Escuela-de-Educaci%C3%B3n-Secundaria-N%C2%BA-1Ing-Luis-Luiggi-342769129230779">Escuela de Educación Secundaria Nº 1 "Ing. Luis Luiggi"</a> que se encuentra ubicada en la ciudad de Punta Alta, Argentina.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

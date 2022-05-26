@@ -1,6 +1,6 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css"; /* Importar desde acá arregla los errores de hacerlo en angular.json. */
 
-/* @import '../node_modules/bootstrap-icons/font/bootstrap-icons';  TODO: Fijarme si realmente lo estoy usando. */
+/* TODO: Faltaría dividir el CSS con sus respectivos componentes. */
 
 html,
 body {
@@ -37,7 +37,7 @@ body {
 .btn.btn-social :first-child {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 6px;
   bottom: 0;
   width: 32px;
   line-height: 43px;
