@@ -12,6 +12,7 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './componentes/encabezado/login/login.component';
+import { Error404Component } from './componentes/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LoginComponent } from './componentes/encabezado/login/login.component';
     EducacionComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    LoginComponent
+    LoginComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,

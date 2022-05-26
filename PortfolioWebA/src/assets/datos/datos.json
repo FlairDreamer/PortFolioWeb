@@ -13,7 +13,7 @@
       "fotoCartel": "/assets/Imágenes/recorteRin2.png"
     },
     "barraNavegacion": {
-      "indice": "index.html",
+      "indice": "/inicio",
       "experiencia": "experiencia.html",
       "educacion": "educación.html",
       "habilidades": "habilidades-blandas-y-duras.html",
