@@ -14,10 +14,10 @@
     },
     "barraNavegacion": {
       "indice": "/inicio",
-      "experiencia": "experiencia.html",
-      "educacion": "educación.html",
-      "habilidades": "habilidades-blandas-y-duras.html",
-      "proyectos": "proyectos.html"
+      "experiencia": "/experiencia",
+      "educacion": "/educación",
+      "habilidades": "/habilidades-blandas-y-duras",
+      "proyectos": "/proyectos"
     },
     "acercaDeMi": {
       "fotoPerfil": "/assets/Imágenes/ChicaPerfil.jpg",
@@ -132,6 +132,10 @@
       "inicio": "08/02/2022",
       "fin": "Actualidad",
       "descripcion": "Primer proyecto realizado. Se trata de mi portfolio el cual cumple con dos propósitos: Que me evalúen en el curso de ArgentinaPrograma y que me sirva como una especie de CV para buscar empleo."
+    },
+    "error":{
+      "noPagina": 404,
+      "img": "/assets/Imágenes/MonikaError404.png"
     }
   }
 }

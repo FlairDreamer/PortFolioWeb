@@ -360,6 +360,7 @@ h5 {
 }
 
 .progress .progress-bar {
+  border-color: #078704;
   border-width: 32px;
   border-style: solid;
   position: absolute;
@@ -367,7 +368,6 @@ h5 {
   height: 100%;
   background: none;
   top: 0;
-  border-color: #078704;
 }
 
 .progress .progress-left .progress-bar {

@@ -1,9 +1,48 @@
-<div> <!-- Barra de navegación. -->
-  <nav class="nav nav-pills nav-fill flex-column flex-md-row bg-white" style="border-top: 4px solid #fff; border-left: 2px solid #fff; border-right: 2px solid #fff">
-    <a class="flex-md-fill text-md-center nav-link blanco separacion-nav" aria-current="page" [routerLink]="barraNavegacion?.indice" style="background: #448aff">Índice</a>
-    <a class="flex-md-fill text-md-center nav-link blanco separacion-nav" [href]="barraNavegacion?.experiencia" style="background: #00358e">Experiencia</a>
-    <a class="flex-md-fill text-md-center nav-link blanco separacion-nav" [href]="barraNavegacion?.educacion" style="background: #00358e">Educación</a>
-    <a class="flex-md-fill text-md-center nav-link blanco separacion-nav" [href]="barraNavegacion?.habilidades" style="background: #00358e">Habilidades blandas y duras</a>
-    <a class="flex-md-fill text-md-center nav-link blanco separacion-nav" [href]="barraNavegacion?.proyectos" style="background: #00358e">Proyectos</a>
+<div>
+  <!-- Barra de navegación. -->
+  <nav
+    class="nav nav-pills nav-fill flex-column flex-md-row"
+    style="
+      border-top: 4px solid #fff;
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff;
+      background-color: #00358e;
+    "
+  >
+    <a
+      class="flex-md-fill text-md-center nav-link blanco separacion-nav"
+      [routerLink]="barraNavegacion?.indice"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Índice</a
+    >
+    <a
+      class="flex-md-fill text-md-center nav-link blanco separacion-nav"
+      [routerLink]="barraNavegacion?.experiencia"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Experiencia</a
+    >
+    <a
+      class="flex-md-fill text-md-center nav-link blanco separacion-nav"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [routerLink]="barraNavegacion?.educacion"
+      >Educación</a
+    >
+    <a
+      class="flex-md-fill text-md-center nav-link blanco separacion-nav"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [routerLink]="barraNavegacion?.habilidades"
+      >Habilidades blandas y duras</a
+    >
+    <a
+      class="flex-md-fill text-md-center nav-link blanco separacion-nav"
+      [routerLinkActive]="['active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [routerLink]="barraNavegacion?.proyectos"
+      >Proyectos</a
+    >
   </nav>
 </div>
