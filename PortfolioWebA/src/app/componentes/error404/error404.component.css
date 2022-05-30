@@ -1,4 +1,12 @@
-h1.error {
-  text-align: center;
+.error {
+  background-color: #f7f7f7;
+  border: 4px solid #ff2f2f;
   color: #ff2f2f;
+  text-align: center;
+}
+
+.barraError { /* Copiando estilo de barra de DDLC. */
+  background-color: #ffe6f4;
+  border: 8px solid #ffbde1;
+  color: black;
 }

@@ -1,3 +1,7 @@
-<app-encabezado></app-encabezado>
-<app-barra-navegacion></app-barra-navegacion>
+<app-encabezado
+  *ngIf="tieneRuta('/error404')"
+></app-encabezado>
+<app-barra-navegacion
+  *ngIf="tieneRuta('/error404')"
+></app-barra-navegacion>
 <router-outlet></router-outlet>
