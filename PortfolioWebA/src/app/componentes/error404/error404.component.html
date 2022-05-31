@@ -1,21 +1,23 @@
 <div class="container-fluid error">
-  <div class="row align-self-center g-0">
-    <h1>
-      <strong>ERROR {{ error?.noPagina.codigo }}</strong>
-    </h1>
-  </div>
-  <div class="row align-self-center g-0">
-    <nav class="navbar justify-content-center">
-      <a class="nav-link barraError" routerLink="/inicio"> ¿Regresar? </a>
+  <div class="row align-self-center">
+    <nav class="navbar-error">
+      <a class="nav-link mx-auto barraError" routerLink="/inicio">
+        ¿Regresar?
+      </a>
     </nav>
     <img
       class="mx-auto"
       [src]="error?.noPagina.img"
       alt="Imagen de error"
-      style="max-width: 380px"
+      style="max-width: 520px"
     />
   </div>
-  <div class="row align-self-center g-0">
-    <h1><strong>PÁGINA NO ENCONTRADA</strong></h1>
+  <div class="container-cajaNombre rounded-top">
+    <h4>Monika</h4>
+  </div>
+  <div class="container-cajaTexto rounded-3">
+    <h5>
+      <strong>{{ error?.noPagina.mensaje }}</strong>
+    </h5>
   </div>
 </div>

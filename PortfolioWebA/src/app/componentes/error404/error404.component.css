@@ -1,12 +1,62 @@
+@font-face {
+  font-family: "Aller";
+  src: local("Aller"), url("src/assets/Fuentes/aller/Aller_Std_Rg.ttf");
+}
+
+@font-face {
+  font-family: "Riffic";
+  src: local("Riffic"), url("src/assets/Fuentes/riffic/RifficFree-Bold.ttf");
+}
+
 .error {
-  background-color: #f7f7f7;
-  border: 4px solid #ff2f2f;
-  color: #ff2f2f;
-  text-align: center;
+  color: #eeebed;
+  font-family: "Aller", Arial, Helvetica, sans-serif;
+  position: absolute;
 }
 
 .barraError { /* Copiando estilo de barra de DDLC. */
   background-color: #ffe6f4;
-  border: 8px solid #ffbde1;
+  border: 6px solid #ffbde1;
   color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+.navbar-error {
+  padding-left: 33%;
+  padding-right: 33%;
+}
+
+.container-cajaTexto {
+  background-color: #ffa8d2;
+  border: 4px solid #ffdfee;
+  height: 19%;
+  margin-bottom: 34px;
+  left: 18%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 1.5%;
+  right: 18%;
+  top: 74%;
+  position: absolute; /* Esta posición permite sobreponerse a otros. */
+  text-shadow: 2px 0 0 #4f2f3e, -2px 0 0 #4f2f3e, 0 2px 0 #4f2f3e, 0 -2px 0 #4f2f3e, 1px 1px #4f2f3e, -1px -1px 0 #4f2f3e, 1px -1px 0 #4f2f3e, -1px 1px 0 #4f2f3e;
+
+  /* -webkit-text-stroke: 1px #000; */
+}
+
+.container-cajaNombre {
+  background-color: #f7e5ed;
+  border-bottom: 2px solid #ccbcc1;
+  bottom: 28%;
+  font-family: "Riffic", Arial, Helvetica, sans-serif;
+  padding-bottom: 0.2%;
+  padding-left: 2.7%;
+  padding-right: 2.7%;
+  padding-top: 0.2%;
+  position: absolute;
+  left: 21%;
+  text-shadow: 2px 0 0 #b59, -2px 0 0 #b59, 0 2px 0 #b59, 0 -2px 0 #b59, 1px 1px #b59, -1px -1px 0 #b59, 1px -1px 0 #b59, -1px 1px 0 #b59;
+
+  /* webkit-text-stroke: 1px #b59; */
 }

@@ -136,7 +136,8 @@
     "error":{
       "noPagina":{
         "codigo":404,
-        "img": "/assets/Imágenes/MonikaError404.png"
+        "img": "/assets/Imágenes/MonikaError404.png",
+        "mensaje": "\"¡Hey! Acabas de activar el error 404. ¿Qué intentabas hacer? La página no existe.\""
       }
     }
   }
