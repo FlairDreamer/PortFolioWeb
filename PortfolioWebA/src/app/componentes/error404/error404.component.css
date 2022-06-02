@@ -12,23 +12,29 @@
   background-color: aliceblue;
   color: #eeebed;
   font-family: "Aller", Arial, Helvetica, sans-serif;
-  position: absolute;
+  position: relative;
 }
 
 .barraError { /* Copiando estilo de barra de DDLC. */
   background-color: #ffe6f4;
   border: 6px solid #ffbde1;
   color: black;
-  padding-bottom: 2px;
-  padding-left: 13.4%;
-  padding-right: 13.4%;
-  padding-top: 2px;
+  cursor: pointer;
+  font-size: 18px;
+  left: 33%;
+  padding-bottom: 0;
+  padding-top: 0;
   position: absolute;
+  right: 33%;
+  top: 35%;
 }
 
-.navbar-error {
-  padding-left: 33%;
-  padding-right: 33%;
+.barraError:hover {
+  background-color: #fff;
+  border: 4px solid #ffbde1;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  color: #fa9;
 }
 
 .container-cajaTexto {
@@ -36,6 +42,7 @@
   border: 4px solid #ffdfee;
   border-radius: 15px;
   color: #ff96c5cc;
+  font-size: 16px;
   height: 19%;
   left: 18%;
   padding-left: 2.5%;
@@ -48,7 +55,6 @@
 }
 
 .container-cajaNombre {
-  background: #f7e5ed;
   background: linear-gradient(0deg, #ccbcc1e6  10%, #f7e5ede6 40%);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;

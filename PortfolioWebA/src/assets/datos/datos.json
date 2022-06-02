@@ -137,7 +137,7 @@
       "noPagina":{
         "codigo":404,
         "img": "/assets/Imágenes/MonikaError404.png",
-        "mensaje": "\"¡Hey! ¿Qué tratas de hacer? La página que buscabas no existe.\""
+        "mensaje": "\"¡Hey! ¿Qué tratas de hacer? Activaste el error 404. La página que buscabas no existe.\""
       }
     }
   }
