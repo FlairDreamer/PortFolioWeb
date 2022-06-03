@@ -9,7 +9,10 @@
 }
 
 .error {
-  background-color: aliceblue;
+  background-image: url("src/assets/Imágenes/club.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #eeebed;
   font-family: "Aller", Arial, Helvetica, sans-serif;
   position: relative;
