@@ -1,7 +1,7 @@
-<app-encabezado></app-encabezado>
-<app-barra-navegacion></app-barra-navegacion>
-<app-acerca-de-mi></app-acerca-de-mi>
-<app-experiencia></app-experiencia>
-<app-educacion></app-educacion>
-<app-habilidades></app-habilidades>
-<app-proyectos></app-proyectos>
+<app-encabezado
+  *ngIf="tieneRuta('/error404')"
+></app-encabezado>
+<app-barra-navegacion
+  *ngIf="tieneRuta('/error404')"
+></app-barra-navegacion>
+<router-outlet></router-outlet>

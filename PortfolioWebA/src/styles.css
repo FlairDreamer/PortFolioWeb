@@ -282,10 +282,6 @@ div.cuadro-texto {
   text-align: center;
 }
 
-a.active {
-  background-color: #448aff;
-}
-
 h1 {
   padding: 6px;
 }
@@ -360,6 +356,7 @@ h5 {
 }
 
 .progress .progress-bar {
+  border-color: #078704;
   border-width: 32px;
   border-style: solid;
   position: absolute;
@@ -367,7 +364,6 @@ h5 {
   height: 100%;
   background: none;
   top: 0;
-  border-color: #078704;
 }
 
 .progress .progress-left .progress-bar {

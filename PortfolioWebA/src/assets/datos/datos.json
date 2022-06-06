@@ -13,11 +13,11 @@
       "fotoCartel": "/assets/Imágenes/recorteRin2.png"
     },
     "barraNavegacion": {
-      "indice": "index.html",
-      "experiencia": "experiencia.html",
-      "educacion": "educación.html",
-      "habilidades": "habilidades-blandas-y-duras.html",
-      "proyectos": "proyectos.html"
+      "indice": "/inicio",
+      "experiencia": "/experiencia",
+      "educacion": "/educación",
+      "habilidades": "/habilidades-blandas-y-duras",
+      "proyectos": "/proyectos"
     },
     "acercaDeMi": {
       "fotoPerfil": "/assets/Imágenes/ChicaPerfil.jpg",
@@ -132,6 +132,13 @@
       "inicio": "08/02/2022",
       "fin": "Actualidad",
       "descripcion": "Primer proyecto realizado. Se trata de mi portfolio el cual cumple con dos propósitos: Que me evalúen en el curso de ArgentinaPrograma y que me sirva como una especie de CV para buscar empleo."
+    },
+    "error":{
+      "noPagina":{
+        "codigo":404,
+        "img": "/assets/Imágenes/MonikaError404.png",
+        "mensaje": "\"¡Hey! ¿Qué tratas de hacer? Activaste el error 404. La página que buscabas no existe.\""
+      }
     }
   }
 }

@@ -106,5 +106,7 @@
       }
     }
   },
-  "defaultProject": "PortfolioWebA"
+  "cli": {
+    "analytics": false
+  }
 }
