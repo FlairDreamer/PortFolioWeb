@@ -1,16 +1,18 @@
-<div class="container-fluid border-lr bg-general"> <!-- Experiencia. -->
+<div class="container-fluid border-lr bg-general">
+  <!-- Experiencia. -->
   <div class="row" style="border-bottom: 4px solid #fff">
     <div class="col-md-3 g-0 align-self-center">
-      <img class="img-fluid" [src]="experiencia?.img" alt="Foto de experiencia">
+      <img
+        class="img-fluid"
+        [src]="experiencia?.img"
+        alt="Foto de experiencia"
+      />
     </div>
-    <div class="separacion g-0">
-    </div>
+    <div class="separacion g-0"></div>
     <div class="col align-self-center">
       <div class="col cuadro-texto">
         <h1>
-          {{experiencia?.p1}}
-          <br>
-          {{experiencia?.p2}}
+          {{ experiencia?.p }}
         </h1>
       </div>
     </div>

@@ -34,8 +34,7 @@
     },
     "experiencia": {
       "img": "/assets/Imágenes/InitialD.jpg",
-      "p1": "No tengo experiencia todavía.",
-      "p2": "Tal vez usted pueda ayudarme a crecer."
+      "p": "¡En busca de nuevas experiencias y oportunidades!"
     },
     "educacion": [
       {
